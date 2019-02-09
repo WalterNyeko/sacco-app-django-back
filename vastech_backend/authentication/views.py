@@ -124,8 +124,9 @@ class UserRetrieveUpdateAPIView(generics.RetrieveUpdateAPIView):
 
 @api_view(['GET', 'POST'])
 def password_reset(request):
+    data = []
     if request.method == 'POST':
-        data = {}
+
         token = uuid.uuid4()
 
         email = request.data.get('email')
@@ -160,9 +161,8 @@ def password_reset(request):
 
 @api_view(['POST'])
 def change_passowrd(request):
+    data = {}
     if request.method == 'POST':
-
-        data = {}
 
         token = request.data.get('token')
 

@@ -16,5 +16,5 @@ urlpatterns = [
     url(r'^users/login/$', LoginAPIView.as_view()),
     url('users/verify/<uidb64>/<token>',
         ActivationAPIView.as_view(), name='Activation'),
-    url('users', ListUserWithProfiles.as_view()),
+    url(r'users$', ListUserWithProfiles.as_view()),
 ]
