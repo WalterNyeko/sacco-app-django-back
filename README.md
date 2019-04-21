@@ -1,4 +1,4 @@
-# VasTech-Sacco-Backend
+# Sacco Application
 This is a sacco api for VasTech
 
 The following are the different endpoints that shall be available for consumption in this repository
